@@ -29,6 +29,15 @@
             </intent-filter>
         </activity>
 
+        <activity
+                android:name=".graphics.ClipZoom"
+                android:label="ClipZoom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="com.jason.test"/>
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
