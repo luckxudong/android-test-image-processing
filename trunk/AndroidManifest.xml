@@ -8,7 +8,7 @@
 
     <uses-sdk android:minSdkVersion="15"/>
 
-    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+    <application android:label="@string/app_name">
 
         <activity android:name="Test"
                   android:label="@string/app_name">
@@ -32,6 +32,35 @@
         <activity
                 android:name=".graphics.ClipZoom"
                 android:label="ClipZoom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="com.jason.test"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name=".graphics.ShaderTest"
+                android:label="Shader"
+                android:hardwareAccelerated="false">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="com.jason.test"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name=".graphics.ColorMatrixTest"
+                android:label="ColorMatrixTest">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="com.jason.test"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name=".graphics.PixelModifyTest"
+                android:label="PixelModifyTest">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="com.jason.test"/>
